@@ -10,14 +10,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "模拟更新编译",
-          "pathName": "pages/cate/cate",
+          "name": "pages/market/market",
+          "pathName": "pages/market/market",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-          "name": "pages/cate/cate",
+          "name": "模拟更新编译",
           "pathName": "pages/cate/cate",
           "query": "",
           "launchMode": "default",

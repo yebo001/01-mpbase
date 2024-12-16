@@ -5,7 +5,8 @@
     "pages/list/list",
     "pages/cate/cate",
     "pages/profile/profile",
-    "pages/cart/cart"
+    "pages/cart/cart",
+    "pages/market/market"
   ],
   "window": {
     "navigationBarTitleText": "慕尚花坊",
@@ -38,6 +39,12 @@
         "pagePath": "pages/cart/cart",
         "iconPath": "/assets/tabbar/cart.png",
         "selectedIconPath": "/assets/tabbar/cart-active.png"
+      },
+      {
+        "text": "促销",
+        "pagePath": "pages/market/market",
+        "iconPath": "/assets/tabbar/profile.png",
+        "selectedIconPath": "/assets/tabbar/profile-active.png"
       },
       {
         "text": "我的",

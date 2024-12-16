@@ -2,4 +2,6 @@
 <!-- view 是小程序提供的组件，是容器组件 类似与div 也是一个块级元素 占据一行 -->
 <!-- 如果想实现需求不能使用px px是固定单位 不能实现自适应 需要使用小程序提供的rpx -->
 <!-- 微信小程序规定 不然是什么型号的手机 屏幕宽度都是750rpx -->
-<view class="box">尚硅谷</view>
+<!-- <view class="box">尚硅谷</view> -->
+
+<button plain="true" type="warn" bind:tap="navigatorBack">navigatorBack</button>

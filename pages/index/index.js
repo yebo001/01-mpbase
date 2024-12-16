@@ -82,6 +82,36 @@ Page({
       })
     }
   },
+  
+  navigatorTo(){
+    // 保留当前页面 跳转到应用中其他页面 不能跳转到 tabBar页面
+    wx.navigateTo({
+      url: '/pages/list/list?id=1&name=tom'
+    })
+  },
+
+  
+  redirectTo(){
+    //关闭/销毁当前页面 跳转 不能跳转到tarBar
+    wx.redirectTo({
+      url: '/pages/list/list'
+    })
+  },
+
+  switchTo(){
+    // 跳转到tabBar页面 不能跳转到其他页面 不能传递参数
+    wx.switchTab({
+      url: '/pages/cate/cate',
+    })
+  },
+
+  relaunch(){
+    //关闭所有页面 然后跳转到页面中某个页面
+    wx.reLaunch({
+      // url: '/pages/cate/cate',
+      url: '/pages/cart/cart'
+    })
+  },
 
   setStorage(){
     wx.setStorageSync('num', 1)
