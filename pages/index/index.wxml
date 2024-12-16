@@ -123,3 +123,4 @@
 <button size="mini" plain="true" type="primary" bind:tap="getStorage">获取</button>
 <button size="mini" plain="true" type="warn" bind:tap="removeStorage">删除</button>
 <button size="mini" plain="true" type="primary" bind:tap="clearStorage">清空</button>
+<button size="mini" plain="true" type="primary" bind:tap="clearStorage">清空</button>
