@@ -1,0 +1,60 @@
+<!-- <view>
+  <button bind:tap="bthHandler" data-id="1" data-name="tom">按钮</button>
+</view> -->
+
+<!-- <view>
+  <button bind:tap="bthHandler" mark:id="1" mark:name="tom">按钮</button>
+</view> -->
+
+<view>{{ school }}</view>
+<view>{{ obj.name }}</view>
+
+<view id="{{ id }}">绑定属性值</view>
+<checkbox checked="{{ isChecked }}"></checkbox>
+
+<view>{{ num }}</view>
+<button bind:tap="updateNum">更新Num</button>
+
+<view class="line"></view>
+
+<view>{{ userInfo.name }}</view>
+<view>{{ userInfo.age }}</view>
+<button type="warn" bind:tap="updateUserInfo">修改对象类型数据</button>
+
+<view class="line"></view>
+<view wx:for="{{ list }}" wx:key="index">{{ item }}</view>
+<!-- <view>{{ list[0].name }}</view> -->
+<button type="primary" bind:tap="updateList">修改数组类型数据</button>
+
+<view class="line"></view>
+
+<!-- 单项绑定 数据改变影响页面 页面改变不影响数据 -->
+<!-- <input type ="text" value="{{ value }}"/> -->
+<!-- 建议双向绑定 数据改变影响页面 页面改变影响数据 -->
+<input type="text" model:value="{{ value }}" />
+
+<!-- 修改默认的item和index标量名称 -->
+<view class="line"></view>
+<view wx:for="{{ list }}" wx:key="index" wx:for-item="newItem" wx:for-index="newIndex">{{ newItem }} - {{ newIndex }}</view>
+
+<view class="line"></view>
+
+<view wx:for="{{ fruitList }}" wx:key="id" wx:for-item="fruitItem" wx:for-index="i">
+  <view>名字: {{ fruitItem.name }}</view>
+  <view>价格: {{ fruitItem.price }}</view>
+</view>
+
+<block wx:for="{{ fruitList }}" wx:key="id" wx:for-item="fruitItem" wx:for-index="i">
+  <view>名字: {{ fruitItem.name }}</view>
+  <view>价格: {{ fruitItem.price }}</view>
+</block>
+
+<view class="line"></view>
+
+<view wx:if="{{ num === 1 }}"> num 等于 {{ num }} </view>
+<view wx:elif="{{ num === 2 }}"> num 等于 {{ num }} </view>
+<view wx:else> num大于2， 目前 num 等于 {{ num }} </view>
+
+<view hidden="{{ !isFlag }}">如果是true就显示，否则隐藏</view>
+
+<button type="warn" bind:tap="updateNum">更新num</button>

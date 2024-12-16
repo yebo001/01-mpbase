@@ -1,0 +1,11 @@
+// 导入样式文件 必须以分号结尾
+@import "./iconfont/iconfont.scss";
+
+input{
+  border: 1px solid #ccc;
+}
+
+.line{
+  border-top: 10rpx solid lightseagreen;
+  margin: 100rpx 0;
+}

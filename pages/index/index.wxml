@@ -1,0 +1,125 @@
+<!-- 轮播图区域 -->
+<view class="swiper">
+  <swiper autoplay="true" interval="2000" indicator-dots="true" indicator-color="#fff" indicator-active-color="#f3514f" circular="true">
+    <swiper-item>
+      <image src="../../assets/banner/banner-1.png" mode=""></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../assets/banner/banner-2.png" mode=""></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../assets/banner/banner-3.png" mode=""></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 公司信息 -->
+<view class="info">
+  <text><text class="iconfont icon-tongchengpeisong"></text> 同城配送</text>
+  <text> <text class="iconfont icon-icon"></text>行业龙头</text>
+  <text> <text class="iconfont icon-icon_sjsj"></text>半小时送达</text>
+  <text> <text class="iconfont icon-haoping"></text>100% 好评</text>
+</view>
+
+<!-- 商品导航 -->
+<view class="good-nav">
+  <view>
+    <navigator url="/pages/list/list">
+      <image src="../../assets/category/cate-1.png"></image>
+      <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+      <image src="../../assets/category/cate-2.png"></image>
+      <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+      <image src="../../assets/category/cate-3.png"></image>
+      <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+      <image src="../../assets/category/cate-4.png"></image>
+      <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+      <image src="../../assets/category/cate-5.png"></image>
+      <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+</view>
+
+<!-- 推荐商品 -->
+<view class="good-hot">
+  <scroll-view scroll-x class="scroll-x">
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/1.png" mode=""></image>
+        <text>鲜花玫瑰</text>
+        <text>66</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/2.png" mode=""></image>
+        <text>鲜花玫瑰</text>
+        <text>118</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/3.png" mode=""></image>
+        <text>鲜花玫瑰</text>
+        <text>88</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/4.png" mode=""></image>
+        <text>鲜花玫瑰</text>
+        <text>99</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/5.png" mode=""></image>
+        <text>鲜花玫瑰</text>
+        <text>100</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+
+<button type="primary" bind:tap="handler">绑定事件</button>
+<button type="warn" bindtap="handler">绑定事件</button>
+<input type="text" bind:input="getInputVal" />
+
+<view class="line"></view>
+
+<view class="catch" bind:tap="parentHandler">
+  <button catch:tap="btnHandler">按钮</button>
+</view>
+
+<button type="warn" bind:tap="getData">获取数据</button>
+
+<view class="line"></view>
+
+<button type="primary" bind:tap="delHandler">删除商品</button>
+
+<view class="line"></view>
+
+<button size="mini" plain="true" type="warn" bind:tap="setStorage">存储</button>
+<button size="mini" plain="true" type="primary" bind:tap="getStorage">获取</button>
+<button size="mini" plain="true" type="warn" bind:tap="removeStorage">删除</button>
+<button size="mini" plain="true" type="primary" bind:tap="clearStorage">清空</button>
